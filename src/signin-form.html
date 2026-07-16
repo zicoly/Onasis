@@ -6,118 +6,92 @@
     <link rel="stylesheet" href="./output.css">
     <title>Document</title>
 </head>
-<body>
-    <section class="flex items-center justify-center h-screen bg-black">
+<body class="min-h-screen bg-gray-950 text-white">
 
-    <div class="w-full max-w-md">
+    <div class="flex min-h-screen flex-col lg:flex-row">
 
-        <h1 class="text-4xl font-bold text-white">
-            Sign Up For Free.
-        </h1>
+        <section class="flex w-full items-center justify-start bg-gradient-to-br from-fuchsia-300 via-purple-500 to-indigo-900 px-6 py-16 lg:w-[45%] lg:min-h-screen lg:px-14">
 
-        <p class="text-gray-400 mt-3 mb-10">
-            Let's sign up quickly to get started.
-        </p>
+            <div class="max-w-xl">
 
-        <form class="space-y-6">
-
-            <!-- Username -->
-
-            <div>
-
-                <label class="text-sm text-gray-300 block mb-2">
-                    Username
-                </label>
-
-                <input
-                    type="text"
-                    placeholder="X_AE_A_13b"
-                    class="w-full rounded-full border border-gray-700 bg-[#111827] px-5 py-4 text-white outline-none focus:border-violet-500">
+                <h2 class="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+                    Welcome to Onasis Links Resources Limited.
+                </h2>
 
             </div>
 
-            <!-- Email -->
+        </section>
 
-            <div>
+        <section class="flex w-full items-center justify-center bg-black px-6 py-16 lg:w-[55%] lg:min-h-screen">
 
-                <label class="text-sm text-gray-300 block mb-2">
-                    Email Address
-                </label>
+            <div class="w-full max-w-md">
 
-                <input
-                    type="email"
-                    placeholder="example@gmail.com"
-                    class="w-full rounded-full border border-violet-600 bg-[#111827] px-5 py-4 text-white outline-none focus:border-violet-500">
+                <h1 class="text-4xl font-bold text-white">
+                    Sign In
+                </h1>
 
-            </div>
-
-            <!-- Password -->
-
-            <div>
-
-                <label class="text-sm text-gray-300 block mb-2">
-                    Password
-                </label>
-
-                <input
-                    type="password"
-                    placeholder="********"
-                    class="w-full rounded-full border border-gray-700 bg-[#111827] px-5 py-4 text-white outline-none">
-
-            </div>
-
-            <!-- Strength -->
-
-            <div>
-
-                <div class="flex gap-2">
-
-                    <div class="h-1 flex-1 rounded bg-green-500"></div>
-                    <div class="h-1 flex-1 rounded bg-green-500"></div>
-                    <div class="h-1 flex-1 rounded bg-green-500"></div>
-                    <div class="h-1 flex-1 rounded bg-gray-700"></div>
-
-                </div>
-
-                <p class="text-sm text-gray-400 mt-2">
-                    Password strength:
-                    <span class="text-green-400">
-                        Strong
-                    </span>
+                <p class="mt-3 mb-10 text-gray-400">
+                    Let's sign in quickly to get started.
                 </p>
 
+                <form class="space-y-6">
+
+                    <div>
+
+                        <label class="mb-2 block text-sm text-gray-300">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            placeholder="example@gmail.com"
+                            class="w-full rounded-full border border-violet-600 bg-[#111827] px-5 py-4 text-white outline-none focus:border-violet-500">
+
+                    </div>
+
+                    <div>
+
+                        <label class="mb-2 block text-sm text-gray-300">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            placeholder="********"
+                            class="w-full rounded-full border border-gray-700 bg-[#111827] px-5 py-4 text-white outline-none">
+
+                    </div>
+
+                    <button
+                        class="w-full rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 py-4 font-semibold text-white transition hover:opacity-90">
+                        Sign In
+                    </button>
+
+                </form>
+
+                <p class="mt-8 text-center text-gray-400">
+                    Don't have an account?
+                    <a href="./index.html" class="text-violet-500 hover:underline">
+                        Sign Up.
+                    </a>
+                </p>
+
+                <button
+                    class="mt-8 flex w-full items-center justify-center gap-3 rounded-full border border-gray-700 bg-[#111827] px-5 py-4 text-white transition hover:bg-gray-900">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="#4285F4" d="M21.6 12.23c0-.78-.07-1.53-.2-2.25H12v4.26h5.38a4.6 4.6 0 0 1-2 3.02v2.5h3.24c1.9-1.75 2.98-4.33 2.98-7.53Z"/>
+                        <path fill="#34A853" d="M12 22c2.7 0 4.96-.9 6.62-2.43l-3.24-2.5c-.9.6-2.05.96-3.38.96-2.59 0-4.79-1.75-5.58-4.1H3.07v2.58A10 10 0 0 0 12 22Z"/>
+                        <path fill="#FBBC05" d="M6.42 13.93A6.02 6.02 0 0 1 6.42 10.07V7.49H3.07a10 10 0 0 0 0 12.88l3.35-2.44Z"/>
+                        <path fill="#EA4335" d="M12 6.04c1.46 0 2.77.5 3.8 1.49l2.84-2.84A9.96 9.96 0 0 0 12 2a10 10 0 0 0-8.93 5.49l3.35 2.58c.79-2.35 2.99-4.1 5.58-4.1Z"/>
+                    </svg>
+                    <span>Sign In With Google</span>
+                </button>
+
             </div>
 
-            <!-- Button -->
-
-            <button
-                class="w-full py-4 rounded-full bg-gradient-to-r from-indigo-500 to-violet-500 text-white font-semibold hover:opacity-90 transition">
-
-                Sign Up
-
-            </button>
-
-        </form>
-
-        <p class="text-center text-gray-400 mt-8">
-
-            Already have an account?
-
-            <a href="#" class="text-violet-500 hover:underline">
-                Sign In.
-            </a>
-
-        </p>
-
-        <button
-            class="mt-8 w-full rounded-full border border-gray-700 py-4 text-white hover:bg-gray-900 transition">
-
-            Sign Up With Google
-
-        </button>
+        </section>
 
     </div>
 
-</section>
 </body>
 </html>
