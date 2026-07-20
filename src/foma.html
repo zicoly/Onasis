@@ -11,8 +11,9 @@
     <div class="flex min-h-screen flex-col lg:flex-row">
       <!-- right side -->
       <section
-        class="flex w-1/2 items-center bg-linear-to-br from-fuchsia-300 via-purple-500 to-indigo-900">
-        <div class="h-screen flex flex-col justify-between p-10">
+         class="hidden w-1/2 items-center justify-start bg-linear-to-br from-fuchsia-300 via-purple-500 to-indigo-900 md:flex"
+      >
+        <div class="h-screen flex flex-col justify-between p-6 lg:p-10">
           <img src="./images/logo.png" alt="logo" width="100px" class="" />
 
           <h2 class="text-3xl font-bold leading-tight text-white">
@@ -23,13 +24,17 @@
 
       <!-- left side -->
       <section
-        class="flex w-1/2 items-center justify-center bg-black px-6 py-16 lg:min-h-screen"
+        class="flex w-full md:w-1/2 items-center justify-center bg-gray-900 px-6 py-16 relative"
       >
-        <div class="w-full max-w-md">
-          <h1 class="text-3xl font-bold text-white">Sign Up</h1>
+       <div class="bg-white/25 opacity-40 inset-0 absolute"></div>
+        <div class="w-full max-w-md p-4 z-10">
+            <div class="flex items-center justify-between">
+                <h1 class="text-3xl font-bold text-white">Sign Up</h1>
+                <img src="./images/logo.png" alt="logo" width="100px" class="visible md:hidden" />
+            </div>
 
           <p class="mt-2 mb-10 text-gray-400">
-            Let's sign in quickly to get started.
+            Let's sign up quickly to get started.
           </p>
 
           <!-- form fields -->
