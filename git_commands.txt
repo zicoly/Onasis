@@ -1,0 +1,427 @@
+# Git Commands for Beginners
+
+# Tailwind Cli command
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+
+*A simple guide from cloning a project to pushing your changes to GitHub.*
+
+---
+
+# 1. Clone a Repository
+
+**What it does:**
+Downloads an existing project from GitHub to your computer.
+
+```bash
+git clone <repository-url>
+```
+
+**Example**
+
+```bash
+git clone https://github.com/username/my-project.git
+```
+
+---
+
+# 2. Open the Project Folder
+
+**What it does:**
+Moves you into the project directory.
+
+```bash
+cd my-project
+```
+
+---
+
+# 3. Check the Current Status
+
+**What it does:**
+Shows which files have been modified, added, or are ready to be committed.
+
+```bash
+git status
+```
+
+---
+
+# 4. Check Which Branch You're On
+
+**What it does:**
+Displays the current branch.
+
+```bash
+git branch
+```
+
+---
+
+# 5. Create a New Branch (Recommended)
+
+**What it does:**
+Creates a new branch for your work.
+
+```bash
+git checkout -b feature/login-page
+```
+
+---
+
+# 6. Switch to Another Branch
+
+**What it does:**
+Changes from one branch to another.
+
+```bash
+git checkout main
+```
+
+or
+
+```bash
+git switch main
+```
+
+---
+
+# 7. View Existing Branches
+
+**What it does:**
+Lists all available branches.
+
+```bash
+git branch
+```
+
+---
+
+# 8. Make Changes
+
+**What it does:**
+Edit your HTML, CSS, JavaScript, or other files.
+
+*(No Git command needed here.)*
+
+---
+
+# 9. Check What Changed
+
+**What it does:**
+Shows which files were modified.
+
+```bash
+git status
+```
+
+---
+
+# 10. See the Exact Changes
+
+**What it does:**
+Displays the lines that were added or removed.
+
+```bash
+git diff
+```
+
+---
+
+# 11. Stage All Changes
+
+**What it does:**
+Prepares every changed file to be committed.
+
+```bash
+git add .
+```
+
+---
+
+# 12. Stage One File
+
+**What it does:**
+Stages only a specific file.
+
+```bash
+git add index.html
+```
+
+---
+
+# 13. Check Staged Files
+
+**What it does:**
+Confirms which files are ready to be committed.
+
+```bash
+git status
+```
+
+---
+
+# 14. Save Your Changes (Commit)
+
+**What it does:**
+Creates a snapshot of your staged changes.
+
+```bash
+git commit -m "Add login page"
+```
+
+Another example:
+
+```bash
+git commit -m "Fix navbar responsiveness"
+```
+
+---
+
+# 15. View Commit History
+
+**What it does:**
+Shows previous commits.
+
+```bash
+git log
+```
+
+Short version:
+
+```bash
+git log --oneline
+```
+
+---
+
+# 16. Download the Latest Changes
+
+**What it does:**
+Gets the latest updates from GitHub.
+
+```bash
+git pull origin main
+```
+
+---
+
+# 17. Upload Your Changes to GitHub
+
+**What it does:**
+Pushes your commits to GitHub.
+
+```bash
+git push origin main
+```
+
+If you're on another branch:
+
+```bash
+git push origin feature/login-page
+```
+
+---
+
+# 18. Check the Remote Repository
+
+**What it does:**
+Shows the GitHub repository your project is connected to.
+
+```bash
+git remote -v
+```
+
+---
+
+# 19. See All Branches (Local & Remote)
+
+**What it does:**
+Lists every branch.
+
+```bash
+git branch -a
+```
+
+---
+
+# 20. Delete a Branch
+
+**What it does:**
+Removes a branch after it has been merged.
+
+```bash
+git branch -d feature/login-page
+```
+
+---
+
+# 21. Discard Changes in One File
+
+**What it does:**
+Restores a file to its last committed version.
+
+```bash
+git restore index.html
+```
+
+---
+
+# 22. Unstage a File
+
+**What it does:**
+Removes a file from the staging area without deleting your work.
+
+```bash
+git restore --staged index.html
+```
+
+---
+
+# 23. Check Who Made Each Commit
+
+**What it does:**
+Displays commit authors.
+
+```bash
+git log --oneline --author="Your Name"
+```
+
+---
+
+# 24. Initialize Git in a New Project
+
+**What it does:**
+Turns an existing folder into a Git repository.
+
+```bash
+git init
+```
+
+---
+
+# 25. Connect a Local Project to GitHub
+
+**What it does:**
+Links your local project to a GitHub repository.
+
+```bash
+git remote add origin https://github.com/username/project.git
+```
+
+---
+
+# 26. First Push to GitHub
+
+**What it does:**
+Uploads your local project to GitHub for the first time.
+
+```bash
+git push -u origin main
+```
+
+The `-u` flag sets `origin/main` as the default upstream branch, so future pushes can simply use:
+
+```bash
+git push
+```
+
+---
+
+# 27. Push Future Changes
+
+**What it does:**
+Uploads your latest commits after the first push.
+
+```bash
+git push
+```
+
+---
+
+# 28. Pull Future Changes
+
+**What it does:**
+Downloads and merges the latest changes from GitHub.
+
+```bash
+git pull
+```
+
+---
+
+# The Git Workflow (The 5 Commands You'll Use Every Day)
+
+After making changes to your project, this is the workflow you'll use most often:
+
+### 1. Check what changed
+
+```bash
+git status
+```
+
+↓
+
+### 2. Stage your changes
+
+```bash
+git add .
+```
+
+↓
+
+### 3. Save your changes
+
+```bash
+git commit -m "Describe what you changed"
+```
+
+↓
+
+### 4. Download any new changes from GitHub (recommended before pushing)
+
+```bash
+git pull origin main
+```
+
+↓
+
+### 5. Upload your changes
+
+```bash
+git push origin main
+```
+
+---
+
+# Beginner Cheat Sheet
+
+| Command                         | Purpose                          |
+| ------------------------------- | -------------------------------- |
+| `git clone <url>`               | Download a project from GitHub   |
+| `cd folder-name`                | Enter the project folder         |
+| `git status`                    | Check changed files              |
+| `git branch`                    | View branches                    |
+| `git checkout -b branch-name`   | Create a new branch              |
+| `git switch branch-name`        | Switch branches                  |
+| `git add .`                     | Stage all changes                |
+| `git add filename`              | Stage one file                   |
+| `git commit -m "message"`       | Save changes                     |
+| `git log --oneline`             | View commit history              |
+| `git pull`                      | Get latest updates               |
+| `git push`                      | Upload changes                   |
+| `git remote -v`                 | View connected GitHub repository |
+| `git restore filename`          | Discard changes in a file        |
+| `git restore --staged filename` | Unstage a file                   |
+| `git init`                      | Initialize Git in a project      |
+
+## Easy Way to Remember
+
+Think of Git like submitting an assignment:
+
+* **`git clone`** → Download the assignment.
+* **Edit files** → Do your work.
+* **`git status`** → Check what you changed.
+* **`git add .`** → Put your work into the submission folder.
+* **`git commit -m "..."`** → Write a note describing your submission.
+* **`git push`** → Submit your work to GitHub.
+* **`git pull`** → Download the latest version if someone else updated the project.
